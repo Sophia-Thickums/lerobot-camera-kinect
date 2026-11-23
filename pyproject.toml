@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lerobot-camera-kinect"
+version = "0.1.0"
+description = "LeRobot camera plugin for the Microsoft Kinect v1 (Xbox 360 sensor): RGB, metric depth and skeleton, on open drivers"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Apache-2.0" }
+authors = [{ name = "Sophia Marie DeClue" }]
+keywords = ["lerobot", "robotics", "camera", "kinect", "depth"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = ["numpy", "lerobot"]
+
+[project.urls]
+Homepage = "https://github.com/Sophia-Thickums/lerobot-camera-kinect"
+
+[tool.setuptools.packages.find]
+include = ["lerobot_camera_kinect*"]
