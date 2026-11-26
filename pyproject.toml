@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "lerobot-camera-kinect"
-version = "0.1.0"
-description = "LeRobot camera plugin for the Microsoft Kinect v1 (Xbox 360 sensor): RGB, metric depth and skeleton, on open drivers"
+version = "0.2.0"
+description = "LeRobot camera plugin for the Microsoft Kinect v1 and v2: RGB, metric depth and skeleton, on open drivers"
 readme = "README.md"
 requires-python = ">=3.10"
 license = { text = "Apache-2.0" }

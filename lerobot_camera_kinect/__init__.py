@@ -12,14 +12,21 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-"""LeRobot camera plugin for the Microsoft Kinect v1 (Xbox 360 sensor).
+"""LeRobot camera plugin for the Microsoft Kinect v1 (Xbox 360) and v2 (Xbox One) sensors.
 
-Importing this package registers the ``kinect`` camera type with LeRobot's config registry, which
-is how a third-party camera plugin is discovered: LeRobot imports any installed package whose name
-starts with ``lerobot_camera_``, and registration happens at import time.
+Importing this package registers the ``kinect`` and ``kinect_v2`` camera types with LeRobot's config
+registry, which is how a third-party camera plugin is discovered: LeRobot imports any installed
+package whose name starts with ``lerobot_camera_``, and registration happens at import time.
 """
 
 from .configuration_kinect import KinectCameraConfig
+from .configuration_kinect_v2 import KinectV2CameraConfig
 from .kinect_camera import KinectCamera
+from .kinect_v2_camera import KinectV2Camera
 
-__all__ = ["KinectCamera", "KinectCameraConfig"]
+__all__ = [
+    "KinectCamera",
+    "KinectCameraConfig",
+    "KinectV2Camera",
+    "KinectV2CameraConfig",
+]
